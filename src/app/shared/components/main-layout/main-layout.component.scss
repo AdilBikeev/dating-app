@@ -1,0 +1,23 @@
+@import "../../../../styles.scss";
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    & .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: $navbar_bg_color;
+
+        & div {
+            cursor: pointer;
+            margin: 10px;
+            & img {
+                width: 40px;
+            }
+        }
+    }
+}

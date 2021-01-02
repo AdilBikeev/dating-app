@@ -5,6 +5,8 @@ import ruLocale from '@angular/common/locales/ru';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { registerLocaleData } from '@angular/common';
+import { HomePageComponent } from './home-page/home-page.component';
+import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component';
 
 /**
  * Добавляем локализацию
@@ -13,7 +15,9 @@ registerLocaleData(ruLocale, 'ru')
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomePageComponent,
+    MainLayoutComponent
   ],
   imports: [
     BrowserModule,
